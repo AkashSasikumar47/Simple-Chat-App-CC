@@ -5,7 +5,6 @@ app = Flask(__name__)
 messages = []
 users = set()
 
-
 @app.route("/")
 def index():
     return render_template("index.html", messages=messages)
